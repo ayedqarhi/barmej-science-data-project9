@@ -1,0 +1,15 @@
+postgres=# CREATE TABLE data_input(
+postgres(# input_id INT PRIMARY KEY,
+postgres(# input_text VARCHAR NOT NULL,
+postgres(# input_date DATE NOT NULL);
+CREATE TABLE
+postgres=# CREATE TABLE data_labeling(
+postgres(# id_text INT PRIMARY KEY,
+postgres(# id_label INT NOT NULL,
+postgres(# label_date TIMESTAMP UNIQUE);
+CREATE TABLE
+postgress=# CREATE TABLE label_types(
+postgress(# label_id INT PRIMARY KEY,
+postgress(# label_name VARCHAR(50) NOT NULL,
+postgress(# comments VARCHAR(50) NOT NULL);
+CREATE TABLE
